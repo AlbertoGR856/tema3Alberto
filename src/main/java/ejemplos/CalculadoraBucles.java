@@ -17,7 +17,7 @@ public class CalculadoraBucles {
         Scanner entrada = new Scanner(System.in);
 
         int opcion;
-        int respuesta = 0;
+        String respuesta;
 
         //Variables para calcular el area del cuadrado
         int lado;
@@ -83,16 +83,19 @@ public class CalculadoraBucles {
             default:
                 System.out.println("Ha seleccionado terminar");
                 break;
+                
+                
         }
         
         
-        System.out.println("¿Quiere volver a realizar una interacción?");
-        System.out.println("1 - Si");
-        System.out.println("2 - No");
+        System.out.println("¿Quiere volver a realizar otra interacción?");
+        System.out.println("S o Cualquier tecla - Si");
+        System.out.println("N - No");
         
-        respuesta = entrada.nextInt();
+        entrada.nextLine();
+        respuesta = entrada.nextLine();
         
-        }while(respuesta != 2);
+        }while(respuesta.equalsIgnoreCase("N"));
          
          System.out.println("FINALIZANDO PROGRAMA....");
         
