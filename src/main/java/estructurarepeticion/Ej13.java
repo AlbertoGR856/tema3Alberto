@@ -18,14 +18,12 @@ public class Ej13 {
 
         char primeraLetraAbecedario = 'A';
         char ultimaLetraAbecedario = 'Z';
-        int codigoNumerico;
 
         do {
-            codigoNumerico = primeraLetraAbecedario;
 
-            System.out.print(codigoNumerico);
+            System.out.print((int) primeraLetraAbecedario);
             System.out.print(" - ");
-            ++primeraLetraAbecedario;
+            primeraLetraAbecedario++;
 
         } while (primeraLetraAbecedario <= ultimaLetraAbecedario);
 
