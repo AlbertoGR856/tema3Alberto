@@ -21,11 +21,11 @@ public class Ej13 {
         int codigoNumerico;
 
         do {
+            codigoNumerico = primeraLetraAbecedario;
 
-            codigoNumerico =  primeraLetraAbecedario;
             System.out.print(codigoNumerico);
             System.out.print(" - ");
-            primeraLetraAbecedario++;
+            ++primeraLetraAbecedario;
 
         } while (primeraLetraAbecedario <= ultimaLetraAbecedario);
 

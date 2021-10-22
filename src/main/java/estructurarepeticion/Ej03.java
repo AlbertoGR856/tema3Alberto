@@ -17,14 +17,21 @@ public class Ej03 {
     public static void main(String[] args) {
 
         final int SERIE_TERMINO = 25;
-        int numero = 15;
+
+        final int FACTOR_MULTIPLICATIVO = 2;
+
+        final int NUMERO = 15;
+
+        //Se utiliza una variable auxiliar para alamacenar la constante ya que una 
+        //constante no puede ser modificada, lo que daria error
+        int aux = NUMERO;
 
         for (int i = 0; i < SERIE_TERMINO; i++) {
 
-            System.out.print(numero);
+            System.out.print(aux);
             System.out.print(" - ");
 
-            numero = numero * 2;
+            aux = aux * FACTOR_MULTIPLICATIVO;
         }
 
     }
