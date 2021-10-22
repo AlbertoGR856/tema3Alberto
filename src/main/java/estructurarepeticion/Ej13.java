@@ -9,20 +9,21 @@ package estructurarepeticion;
  * @author albertogarzon
  */
 /*
-11.- Implementa un programa Java que permita visualizar todas las letras mayúsculas, 
-desde la 'A' hasta la 'Z', usando un do – while.
+13.- Modifica el programa del ejercicio 11 para que se vea el código numérico (número entero) 
+de cada una de las letras.
  */
-public class Ej11 {
+public class Ej13 {
 
     public static void main(String[] args) {
 
         char primeraLetraAbecedario = 'A';
         char ultimaLetraAbecedario = 'Z';
-
+        int codigoNumerico;
 
         do {
 
-            System.out.print(primeraLetraAbecedario);
+            codigoNumerico =  primeraLetraAbecedario;
+            System.out.print(codigoNumerico);
             System.out.print(" - ");
             primeraLetraAbecedario++;
 
